@@ -6,7 +6,7 @@
 body {
   width: 100%;
   height: 100%;
-  background-color: #ede1e1;
+  background-color: #e1eced;
 }
 
 html {
@@ -15,6 +15,7 @@ html {
 }
 
 #container {
+  position: relative;
   width: 100%;
   height: auto;
   display: flex;
@@ -33,8 +34,18 @@ html {
 }
 
 #barra {
+  width: 70%;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 20px;
+}
+
+#navigator {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
 }
 
 a {
@@ -52,4 +63,87 @@ a {
   color: blue;
   border-radius: 3px;
   border: 2px solid blue;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#middle {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 13%;
+  width: 30%;
+  visibility: visible;
+}
+
+#par {
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+#par2 {
+  font-size: 18px;
+}
+
+#descr1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#registra {
+  display: flex;
+  gap: 8px;
+}
+
+#reg {
+  display: flex;
+  gap: 8px;
+}
+
+#login {
+  height: 40px;
+  width: 227px;
+  border: none;
+  margin-top: 2px;
+}
+
+#invio {
+  height: 44px;
+  width: 160px;
+  background-color: red;
+  border: red;
+  border-radius: 4px;
+  color: white;
+}
+
+#fin {
+  display: flex;
+  justify-content: center;
+}
+
+#grazie {
+  position: absolute;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  visibility: hidden;
+}
+
+#back {
+  height: 44px;
+  width: 160px;
+  background-color: red;
+  border: red;
+  border-radius: 4px;
+  color: white;
 }
