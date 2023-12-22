@@ -14,6 +14,11 @@ html {
   height: 100%;
 }
 
+p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 #container {
   position: relative;
   width: 100%;
@@ -74,26 +79,37 @@ button:hover {
   flex-direction: column;
   gap: 20px;
   margin-top: 13%;
-  width: 30%;
+  width: 40%;
   visibility: visible;
 }
 
 #par {
   font-size: 15px;
+  color: rgb(122, 120, 120);
 }
 
 h1 {
   font-size: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
 }
 
 #par2 {
   font-size: 18px;
+  text-align: center;
+  color: rgb(122, 120, 120);
 }
 
 #descr1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+#descr3 {
+  width: 85%;
+  margin: auto;
 }
 
 #registra {
@@ -103,6 +119,7 @@ h1 {
 
 #reg {
   display: flex;
+  justify-content: center;
   gap: 8px;
 }
 
@@ -127,6 +144,10 @@ h1 {
   justify-content: center;
 }
 
+#truse {
+  color: rgb(122, 120, 120);
+}
+
 #grazie {
   position: absolute;
   margin-top: 100px;
@@ -146,4 +167,49 @@ h1 {
   border: red;
   border-radius: 4px;
   color: white;
+}
+
+@media screen and (max-width: 800px) {
+  #navigator {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+  }
+
+  #barra {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  #btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -8px;
+    background: transparent;
+    color: blue;
+    border-radius: 3px;
+    border: 2px solid blue;
+    width: 30%;
+  }
+
+  #reg {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  #registra {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
 }
